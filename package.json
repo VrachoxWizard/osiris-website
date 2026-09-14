@@ -4,10 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "kill-port 5173",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "prepreview": "kill-port 4173",
+    "preview": "vite preview",
+    "killport": "kill-port 5173 4173"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -22,6 +25,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "kill-port": "^2.0.1",
     "oxlint": "^1.81.0",
     "tailwindcss": "^4.1.13",
     "typescript": "~6.0.2",
