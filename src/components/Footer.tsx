@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="flex items-center justify-between px-[calc(2.5rem+2.5vw)] py-[1.2rem] text-base max-md:flex-col max-md:items-center">
       <div className="flex items-center">
-        Reach out to me via 😉
+        Javite nam se putem 😉
         <a
           href="https://twitter.com/code_bucks"
           className="footer-icon-link"

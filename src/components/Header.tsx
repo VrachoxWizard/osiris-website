@@ -88,7 +88,7 @@ const Header = () => {
           onClick={(e) => scrollUp("home", e)}
           className="group relative font-semibold leading-normal text-white"
         >
-          Home
+          Početna
           <span className="block h-0.75 w-0 bg-transparent transition-all duration-500 group-hover:w-full group-hover:bg-purple" />
         </a>
         <a
@@ -96,7 +96,7 @@ const Header = () => {
           onClick={(e) => scrollUp("about", e)}
           className="group relative font-semibold leading-normal text-white"
         >
-          About Us
+          O nama
           <span className="block h-0.75 w-0 bg-transparent transition-all duration-500 group-hover:w-full group-hover:bg-purple" />
         </a>
         <a
@@ -104,18 +104,18 @@ const Header = () => {
           onClick={(e) => scrollUp("services", e)}
           className="group relative font-semibold leading-normal text-white"
         >
-          Services
+          Usluge
           <span className="block h-0.75 w-0 bg-transparent transition-all duration-500 group-hover:w-full group-hover:bg-purple" />
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           <button className="cursor-pointer rounded-full bg-purple px-4 py-2 font-semibold text-white transition-all duration-200 hover:scale-110 active:scale-90 max-sm:text-xl max-sm:hover:scale-100 max-sm:active:scale-100">
-            Contact Us
+            Kontakt
           </button>
         </a>
       </nav>
       <button
         onClick={() => setClick(!click)}
-        aria-label="Toggle menu"
+        aria-label="Otvori izbornik"
         className="relative hidden h-0.5 w-8 cursor-pointer bg-transparent transition-all duration-300 max-md:inline-block"
       >
         <span
@@ -139,25 +139,25 @@ const Header = () => {
           onClick={(e) => handleClick("home", e)}
           className="m-6 cursor-pointer text-2xl font-semibold text-white"
         >
-          Home
+          Početna
         </a>
         <a
           href="#about"
           onClick={(e) => handleClick("about", e)}
           className="m-6 cursor-pointer text-2xl font-semibold text-white"
         >
-          About Us
+          O nama
         </a>
         <a
           href="#services"
           onClick={(e) => handleClick("services", e)}
           className="m-6 cursor-pointer text-2xl font-semibold text-white"
         >
-          Services
+          Usluge
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
           <button className="cursor-pointer rounded-full bg-purple px-4 py-2 font-semibold text-white transition-all duration-200">
-            Contact Us
+            Kontakt
           </button>
         </a>
       </nav>

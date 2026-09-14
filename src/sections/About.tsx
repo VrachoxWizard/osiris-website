@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <div className="mx-60 mt-60 flex flex-col justify-center max-lg:mx-[calc(5rem+5vw)] max-lg:mt-40 max-sm:m-[3rem_calc(3rem+3vw)] max-sm:items-center">
         <div>
-          <h1 className="inline-block text-[2rem]">About Us</h1>
+          <h1 className="inline-block text-[2rem]">O nama</h1>
           <div className="h-8 w-28 rounded-[150%/60px_70px_0_0] border-5 border-t-purple border-r-transparent border-b-transparent border-l-transparent" />
         </div>
         <div className="flex items-center justify-between max-sm:flex-col">
@@ -27,10 +27,10 @@ const About = () => {
               <img src={human} alt="" />
             </div>
             <h4 className="text-[calc(0.5rem+1vw)] leading-normal text-nav2">
-              We help our customers to tell about themselves, to grow and
-              stand out in an increasingly competitive digital world, through
-              creative projects that are able to attract and involve,
-              creating strategic value.
+              Pomažemo klijentima predstaviti sebe, rasti i istaknuti se u
+              sve konkurentnijem digitalnom svijetu kroz kreativne projekte
+              koji privlače pažnju i uključuju korisnike, stvarajući
+              stratešku vrijednost.
             </h4>
             <div>
               <span className="mt-4 mr-2 inline-block h-4 w-4 rounded-full bg-purple" />

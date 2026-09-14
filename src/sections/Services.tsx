@@ -176,7 +176,7 @@ const Services = () => {
         className="absolute left-0 top-0 -z-1 flex h-[85vh] w-screen flex-col items-center bg-black bg-[length:auto_100vh] bg-no-repeat"
       >
         <h1 className="title relative mt-4 inline-block text-[2rem] text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-1/2 before:-translate-x-1/2 before:translate-y-2 before:border-b-2 before:border-pink before:content-['']">
-          What We Do
+          Što radimo
         </h1>
         <span
           id="line"
@@ -193,22 +193,23 @@ const Services = () => {
         className="relative my-40 mx-40 flex items-center justify-between max-lg:mx-[calc(4rem+5vw)] max-md:block max-md:last:mb-8 max-sm:mx-[calc(2rem+3vw)] max-sm:last:mb-4"
       >
         <TextBlock
-          topic="Design"
+          topic="Dizajn"
           title={
             <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
-              We build award winning Designs
+              Izrađujemo nagrađivane dizajne
             </h1>
           }
           subText={
             <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
-              We help clients to build great design to attract more customers
+              Pomažemo klijentima kreirati odličan dizajn koji privlači više
+              kupaca
             </h5>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
-          <img src={Tube} alt="Tube Object" />
+          <img src={Tube} alt="Objekt u obliku cijevi" />
         </div>
-        <SvgBlock src={designIcon} alt="Design" />
+        <SvgBlock src={designIcon} alt="Dizajn" />
       </div>
 
       <div
@@ -216,45 +217,45 @@ const Services = () => {
         className="relative my-40 mx-40 flex items-center justify-between max-lg:mx-[calc(4rem+5vw)] max-md:block max-md:last:mb-8 max-sm:mx-[calc(2rem+3vw)] max-sm:last:mb-4"
       >
         <TextBlock
-          topic="Develop"
+          topic="Razvoj"
           title={
             <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
-              We Develope high quality Web &amp; App
+              Razvijamo kvalitetne web stranice i aplikacije
             </h1>
           }
           subText={
             <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
-              We build appropriate solution to develope your website &amp;
-              app with best tools available
+              Gradimo prikladna rješenja za razvoj vaše web stranice i
+              aplikacije najboljim dostupnim alatima
             </h5>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
-          <img src={Cone} alt="Cone Object" />
+          <img src={Cone} alt="Objekt u obliku stošca" />
         </div>
-        <SvgBlock src={developIcon} alt="Develop" />
+        <SvgBlock src={developIcon} alt="Razvoj" />
       </div>
 
       <div className="relative my-40 mx-40 flex items-center justify-between max-lg:mx-[calc(4rem+5vw)] max-md:block max-md:last:mb-8 max-sm:mx-[calc(2rem+3vw)] max-sm:last:mb-4">
         <TextBlock
-          topic="Support"
+          topic="Podrška"
           title={
             <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
-              We provide support for your digital presence
+              Pružamo podršku za vašu digitalnu prisutnost
             </h1>
           }
           subText={
             <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
-              Once your system is online, we will stay on hand to help you
-              use it and provide technical support and maintenance <br />{" "}
-              your business
+              Kada vaš sustav postane dostupan online, ostajemo na
+              raspolaganju kako bismo vam pomogli koristiti ga te pružili
+              tehničku podršku i održavanje za vaše poslovanje
             </h5>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
-          <img src={Capsule} alt="Capsule Object" />
+          <img src={Capsule} alt="Objekt u obliku kapsule" />
         </div>
-        <SvgBlock src={supportIcon} alt="Support" />
+        <SvgBlock src={supportIcon} alt="Podrška" />
       </div>
     </section>
   );
