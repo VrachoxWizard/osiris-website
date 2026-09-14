@@ -10,6 +10,7 @@
   --color-nav2: #3f3d56;
 
   --font-sans: "Poppins", sans-serif;
+  --font-display: "Cinzel", serif;
 }
 
 @layer base {
