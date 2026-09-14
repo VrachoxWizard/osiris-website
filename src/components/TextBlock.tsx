@@ -20,7 +20,7 @@ const TextBlock = ({ topic, title, subText, children }: TextBlockProps) => {
       <div className="py-2 text-[calc(1rem+1vw)] leading-[1.2] max-md:text-[calc(1rem+1.5vw)]">
         {title}
       </div>
-      <div className="text-[calc(0.5rem+0.5vw)] text-nav2 max-md:text-[calc(0.5rem+1vw)]">
+      <div className="text-[calc(0.5rem+0.5vw)] text-white/75 max-md:text-[calc(0.5rem+1vw)]">
         {subText}
       </div>
       {children}

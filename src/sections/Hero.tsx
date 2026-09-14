@@ -29,23 +29,23 @@ const Hero = () => {
         >
           <span className="flex items-center justify-center rounded-full bg-nav px-4 py-2 text-[calc(0.4rem+0.4vw)] font-bold text-white">
             <span className="mr-2 inline-block h-4 w-4 rounded-full bg-purple" />
-            <span>We Build Web</span>
+            <span>Izrađujemo web</span>
           </span>
           <h1 className="py-2 text-[calc(2rem+1vw)] leading-[1.2]">
-            Transforming your digital presence
+            Transformiramo vašu digitalnu prisutnost
           </h1>
-          <h5 className="text-[calc(0.5rem+0.5vw)] text-nav2">
-            we help fast growing companies build award winning websites
+          <h5 className="text-[calc(0.5rem+0.5vw)] text-white/75">
+            pomažemo tvrtkama u brzom rastu izraditi nagrađivane web stranice
           </h5>
           <button className="mt-4 flex items-center rounded-full bg-white px-4 py-2 text-[calc(0.5rem+0.5vw)] font-bold text-black transition-transform duration-200 hover:scale-110 active:scale-90 max-md:py-[0.2rem]">
-            Get in touch &nbsp;
-            <img src={arrow} alt="cta" className="w-6" />
+            Javite nam se &nbsp;
+            <img src={arrow} alt="poziv na akciju" className="w-6" />
           </button>
         </div>
 
         <img
           src={Mobile}
-          alt="Mobile Svg"
+          alt="Mobilni prikaz stranice"
           className="z-7 w-[calc(30%+20vw)] max-w-full animate-[float-y_2.5s_ease_infinite] max-md:absolute max-md:bottom-0 max-md:w-[calc(30%+20vw)] max-md:self-start max-md:opacity-50 max-sm:hidden"
         />
       </div>

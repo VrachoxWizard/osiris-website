@@ -10,7 +10,7 @@ const Contact = () => {
       className="flex w-screen flex-col items-center justify-center bg-black py-[calc(2.5rem+2.5vw)]"
     >
       <h1 className="relative mb-12 inline-block text-[2rem] text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-1/2 before:-translate-x-1/2 before:translate-y-2 before:border-b-2 before:border-pink before:content-['']">
-        Get in touch
+        Kontaktirajte nas
       </h1>
       <div className="mb-12 flex">
         <a href="https://www.facebook.com/" className="mr-8 contact-icon-link">
@@ -37,20 +37,20 @@ const Contact = () => {
           <input
             name="name"
             type="text"
-            placeholder="your name"
+            placeholder="vaše ime"
             className="mr-8 mb-4 rounded bg-nav2 px-[calc(0.5rem+1vw)] py-4 text-background placeholder-background/60 focus:bg-nav focus:outline-none max-sm:mr-0"
           />
           <input
             name="email"
             type="email"
-            placeholder="enter working email id"
+            placeholder="unesite email adresu"
             className="mb-4 rounded bg-nav2 px-[calc(0.5rem+1vw)] py-4 text-background placeholder-background/60 focus:bg-nav focus:outline-none"
           />
         </div>
         <textarea
           cols={30}
           rows={2}
-          placeholder="your message"
+          placeholder="vaša poruka"
           className="mb-8 rounded bg-nav2 px-[calc(0.5rem+1vw)] py-4 text-background placeholder-background/60 focus:bg-nav focus:outline-none"
         />
         <div className="mx-auto">
@@ -60,7 +60,7 @@ const Contact = () => {
             }}
             className="cursor-pointer rounded-[20px] bg-white px-8 py-[0.8rem] text-[1.2rem] text-black transition-transform duration-300 hover:scale-110 active:scale-90"
           >
-            Submit
+            Pošalji
           </button>
         </div>
       </form>
