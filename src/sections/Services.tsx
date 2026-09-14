@@ -30,17 +30,16 @@ const Services = () => {
     () => {
       const element = ref.current;
       const mq = window.matchMedia("(max-width: 48em)");
-      const t1 = gsap.timeline({
-        scrollTrigger: {
-          trigger: document.getElementById("services"),
-          start: "top top+=180",
-          end: "bottom bottom",
-          pin: element,
-          pinReparent: true,
-        },
+
+      ScrollTrigger.create({
+        trigger: document.getElementById("services"),
+        start: "top top+=180",
+        end: "bottom bottom",
+        pin: element,
+        pinReparent: true,
       });
 
-      t1.fromTo(
+      gsap.fromTo(
         document.getElementById("line"),
         {
           height: "15rem",
@@ -52,14 +51,15 @@ const Services = () => {
             trigger: document.getElementById("line"),
             start: "top top+=200",
             end: "bottom top+=220",
-            scrub: true,
+            scrub: 0.4,
+            fastScrollEnd: true,
           },
         },
       );
 
       revealRefs.current.forEach((el, index) => {
         if (mq.matches) {
-          t1.from((el.childNodes[0] as Element), {
+          gsap.from((el.childNodes[0] as Element), {
             x: -300,
             opacity: 0,
             duration: 2,
@@ -69,48 +69,52 @@ const Services = () => {
               trigger: el,
               start: "top center+=200",
               end: "bottom bottom-=100",
-              scrub: true,
-              snap: true as unknown as number,
+              scrub: 0.4,
+              fastScrollEnd: true,
             },
-          })
-            .to((el.childNodes[1] as Element), {
-              transform: "scale(0)",
-              ease: "power2.inOut",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: (el.childNodes[1] as Element),
-                start: "top center",
-                end: "bottom center",
-                scrub: true,
-                snap: true as unknown as number,
-              },
-            })
-            .from((el.childNodes[2] as Element), {
-              y: 400,
-              duration: 2,
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top center+=100",
-                end: "bottom bottom-=200",
-                scrub: true,
-                snap: true as unknown as number,
-              },
-            })
-            .to(el, {
-              opacity: 0,
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=300",
-                end: "center top+=300",
-                scrub: true,
-              },
-            });
+          });
+
+          gsap.to((el.childNodes[1] as Element), {
+            scale: 0,
+            ease: "power2.inOut",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: (el.childNodes[1] as Element),
+              start: "top center",
+              end: "bottom center",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
+
+          gsap.from((el.childNodes[2] as Element), {
+            y: 400,
+            duration: 2,
+            ease: "power2",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: el,
+              start: "top center+=100",
+              end: "bottom bottom-=200",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
+
+          gsap.to(el, {
+            opacity: 0,
+            ease: "power2",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: el,
+              start: "top top+=300",
+              end: "center top+=300",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
         } else {
-          t1.from((el.childNodes[0] as Element), {
+          gsap.from((el.childNodes[0] as Element), {
             x: -300,
             opacity: 0,
             duration: 2,
@@ -120,46 +124,50 @@ const Services = () => {
               trigger: el,
               start: "top center+=100",
               end: "bottom bottom-=200",
-              scrub: true,
-              snap: true as unknown as number,
+              scrub: 0.4,
+              fastScrollEnd: true,
             },
-          })
-            .to((el.childNodes[1] as Element), {
-              transform: "scale(0)",
-              ease: "power2.inOut",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: (el.childNodes[1] as Element),
-                start: "top center",
-                end: "bottom center",
-                scrub: true,
-                snap: true as unknown as number,
-              },
-            })
-            .from((el.childNodes[2] as Element), {
-              y: 400,
-              duration: 2,
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top center+=100",
-                end: "bottom bottom-=200",
-                scrub: true,
-                snap: true as unknown as number,
-              },
-            })
-            .to(el, {
-              opacity: 0,
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=200",
-                end: "center top+=300",
-                scrub: true,
-              },
-            });
+          });
+
+          gsap.to((el.childNodes[1] as Element), {
+            scale: 0,
+            ease: "power2.inOut",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: (el.childNodes[1] as Element),
+              start: "top center",
+              end: "bottom center",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
+
+          gsap.from((el.childNodes[2] as Element), {
+            y: 400,
+            duration: 2,
+            ease: "power2",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: el,
+              start: "top center+=100",
+              end: "bottom bottom-=200",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
+
+          gsap.to(el, {
+            opacity: 0,
+            ease: "power2",
+            scrollTrigger: {
+              id: `section-${index + 1}`,
+              trigger: el,
+              start: "top top+=200",
+              end: "center top+=300",
+              scrub: 0.4,
+              fastScrollEnd: true,
+            },
+          });
         }
       });
     },
@@ -236,7 +244,10 @@ const Services = () => {
         <SvgBlock src={developIcon} alt="Razvoj" />
       </div>
 
-      <div className="relative my-40 mx-40 flex items-center justify-between max-lg:mx-[calc(4rem+5vw)] max-md:block max-md:last:mb-8 max-sm:mx-[calc(2rem+3vw)] max-sm:last:mb-4">
+      <div
+        ref={addToRefs}
+        className="relative my-40 mx-40 flex items-center justify-between max-lg:mx-[calc(4rem+5vw)] max-md:block max-md:last:mb-8 max-sm:mx-[calc(2rem+3vw)] max-sm:last:mb-4"
+      >
         <TextBlock
           topic="Podrška"
           title={
