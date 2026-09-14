@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #eff7f9;
+  --color-black: #0a0b10;
+  --color-purple: #803bec;
+  --color-pink: #e5a1f8;
+  --color-white: #fff;
+  --color-nav: #35353f;
+  --color-nav2: #3f3d56;
+
+  --font-sans: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes float-y {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float-xy {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px) translateX(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.footer-icon-link:hover img {
+  transform: scale(1.5);
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(216deg)
+    brightness(100%) contrast(97%);
+}
+
+.contact-icon-link:hover img {
+  filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
+    brightness(100%) contrast(97%);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-purple);
+  outline-offset: 2px;
+}
