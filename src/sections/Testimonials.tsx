@@ -9,22 +9,22 @@ import avatar4 from "../assets/avatar-4.jpg";
 
 const testimonials = [
   {
-    text: "CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them.",
+    text: "Osiris has been essential part of our business. I would definetly recommend Osiris. It has been amazing to have them.",
     name: "Jenny (CodeCall)",
     image: avatar1,
   },
   {
-    text: "CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them.",
+    text: "Osiris has been essential part of our business. I would definetly recommend Osiris. It has been amazing to have them.",
     name: "Jenny (CodeCall)",
     image: avatar2,
   },
   {
-    text: "CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them.",
+    text: "Osiris has been essential part of our business. I would definetly recommend Osiris. It has been amazing to have them.",
     name: "Jenny (CodeCall)",
     image: avatar3,
   },
   {
-    text: "CodeBucks has been essential part of our business. I would definetly recommend CodeBucks. It has been amazing to have them.",
+    text: "Osiris has been essential part of our business. I would definetly recommend Osiris. It has been amazing to have them.",
     name: "Jenny (CodeCall)",
     image: avatar4,
   },

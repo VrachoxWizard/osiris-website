@@ -76,9 +76,11 @@ const Header = () => {
       ref={ref}
       className="relative z-500 flex items-center justify-between bg-nav px-20 py-4 text-white max-lg:px-12 max-lg:py-2 max-sm:px-6 max-sm:py-2"
     >
-      <a href="#home" className="flex w-8 cursor-pointer items-center">
-        <img src={logo} alt="CodeBucks" className="mr-2" />
-        <h3 className="text-[1.17em] font-bold">CodeBucks</h3>
+      <a href="#home" className="flex cursor-pointer items-center">
+        <img src={logo} alt="Osiris" className="mr-3 h-13 w-13" />
+        <h3 className="bg-linear-to-r from-pink via-purple to-pink bg-clip-text text-[1.7em] font-display font-bold tracking-[0.12em] text-transparent [text-shadow:0_0_18px_rgba(128,59,236,0.55)]">
+          OSIRIS
+        </h3>
       </a>
       <nav className="flex w-100 max-w-160 items-center justify-between transition-all duration-300 max-md:hidden">
         <a
