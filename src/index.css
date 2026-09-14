@@ -12,20 +12,39 @@
   --font-sans: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background-color: var(--color-background);
-  overflow-x: hidden;
-  font-family: var(--font-sans);
-}
+  body {
+    background-color: var(--color-background);
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+  }
 
-img,
-svg {
-  width: 100%;
-  height: auto;
+  img,
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-icon-link:hover img {
+    transform: scale(1.5);
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(216deg)
+      brightness(100%) contrast(97%);
+  }
+
+  .contact-icon-link:hover img {
+    filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
+      brightness(100%) contrast(97%);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-purple);
+    outline-offset: 2px;
+  }
 }
 
 @keyframes float-y {
@@ -50,21 +69,4 @@ svg {
   100% {
     transform: translateY(-5px);
   }
-}
-
-.footer-icon-link:hover img {
-  transform: scale(1.5);
-  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(216deg)
-    brightness(100%) contrast(97%);
-}
-
-.contact-icon-link:hover img {
-  filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(580deg)
-    brightness(100%) contrast(97%);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--color-purple);
-  outline-offset: 2px;
 }
