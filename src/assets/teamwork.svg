@@ -1,79 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="820" height="720" viewBox="0 0 820 720" fill="none">
-  <ellipse cx="410" cy="660" rx="320" ry="14" fill="#ffffff" fill-opacity="0.05"/>
-  <line x1="80" y1="660" x2="740" y2="660" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
-
-  <path d="M95,330 C300,180 520,180 725,330" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 10" stroke-linecap="round"/>
-  <circle cx="250" cy="200" r="4" fill="#ffffff" fill-opacity="0.8"/>
-  <circle cx="410" cy="178" r="4" fill="#ffffff" fill-opacity="0.8"/>
-  <circle cx="570" cy="200" r="4" fill="#ffffff" fill-opacity="0.8"/>
-
-  <g>
-    <path d="M115,480 C100,510 95,540 98,560" stroke="#f2b28c" stroke-width="22" stroke-linecap="round" fill="none"/>
-    <circle cx="98" cy="560" r="11" fill="#f2b28c"/>
-    <rect x="126" y="560" width="24" height="90" rx="10" fill="#35353f"/>
-    <rect x="162" y="560" width="24" height="90" rx="10" fill="#35353f"/>
-    <rect x="110" y="460" width="90" height="110" rx="30" fill="#803bec"/>
-    <path d="M195,480 C230,440 245,360 250,305" stroke="#f2b28c" stroke-width="26" stroke-linecap="round" fill="none"/>
-    <circle cx="250" cy="300" r="15" fill="#f2b28c"/>
-    <rect x="145" y="438" width="20" height="30" fill="#f2b28c"/>
-    <ellipse cx="155" cy="402" rx="32" ry="27" fill="#3f3d56"/>
-    <circle cx="155" cy="420" r="30" fill="#f2b28c"/>
-  </g>
-
-  <g>
-    <path d="M65,374 L80,392 L60,396 Z" fill="#803bec"/>
-    <rect x="55" y="322" width="72" height="46" rx="14" fill="#803bec"/>
-    <path d="M74,345 L82,353 L96,337" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  </g>
-
-  <g>
-    <path d="M705,480 C720,510 725,540 722,560" stroke="#c78b6f" stroke-width="22" stroke-linecap="round" fill="none"/>
-    <circle cx="722" cy="560" r="11" fill="#c78b6f"/>
-    <rect x="634" y="560" width="24" height="90" rx="10" fill="#35353f"/>
-    <rect x="670" y="560" width="24" height="90" rx="10" fill="#35353f"/>
-    <rect x="620" y="460" width="90" height="110" rx="30" fill="#e5a1f8"/>
-    <path d="M625,480 C590,440 575,360 570,305" stroke="#c78b6f" stroke-width="26" stroke-linecap="round" fill="none"/>
-    <circle cx="570" cy="300" r="15" fill="#c78b6f"/>
-    <rect x="655" y="438" width="20" height="30" fill="#c78b6f"/>
-    <ellipse cx="665" cy="402" rx="32" ry="27" fill="#3f3d56"/>
-    <circle cx="665" cy="420" r="30" fill="#c78b6f"/>
-  </g>
-
-  <g>
-    <path d="M755,374 L740,392 L760,396 Z" fill="#e5a1f8"/>
-    <rect x="693" y="322" width="72" height="46" rx="14" fill="#e5a1f8"/>
-    <path d="M708,345 L716,353 L730,337" stroke="#35353f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path d="M719,345 L727,353 L741,337" stroke="#35353f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  </g>
-
   <defs>
-    <clipPath id="teamworkCardClip">
-      <rect x="250" y="170" width="320" height="300" rx="20"/>
+    <filter id="laptopGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="38"/>
+    </filter>
+    <clipPath id="laptopScreenClip">
+      <rect x="166" y="134" width="488" height="310" rx="12"/>
     </clipPath>
   </defs>
-  <g clip-path="url(#teamworkCardClip)">
-    <rect x="250" y="170" width="320" height="300" fill="#ffffff"/>
-    <rect x="250" y="170" width="320" height="46" fill="#3f3d56"/>
-    <circle cx="274" cy="193" r="5" fill="#e5a1f8"/>
-    <circle cx="292" cy="193" r="5" fill="#803bec"/>
-    <circle cx="310" cy="193" r="5" fill="#e5e5e5"/>
-    <path d="M528,184 L518,194 L528,204" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-    <path d="M534,206 L542,182" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <path d="M548,184 L558,194 L548,204" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 
-    <rect x="274" y="236" width="160" height="30" rx="15" fill="#e5e5e5"/>
-    <rect x="364" y="280" width="180" height="30" rx="15" fill="#803bec"/>
-    <rect x="274" y="324" width="120" height="30" rx="15" fill="#e5e5e5"/>
-    <rect x="274" y="368" width="64" height="30" rx="15" fill="#e5e5e5"/>
-    <circle cx="292" cy="383" r="4" fill="#803bec"/>
-    <circle cx="306" cy="383" r="4" fill="#e5a1f8"/>
-    <circle cx="320" cy="383" r="4" fill="#0a0b10"/>
+  <g transform="translate(0,40)">
+    <g filter="url(#laptopGlow)">
+      <ellipse cx="360" cy="300" rx="210" ry="170" fill="#803bec" fill-opacity="0.35"/>
+      <ellipse cx="480" cy="340" rx="210" ry="170" fill="#e5a1f8" fill-opacity="0.28"/>
+    </g>
 
-    <rect x="274" y="420" width="234" height="34" rx="17" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
-    <circle cx="524" cy="437" r="17" fill="#e5a1f8"/>
-    <path d="M519,437 L529,437 M524,432 L529,437 L524,442" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="122" cy="130" r="4" fill="#e5a1f8" fill-opacity="0.7"/>
+    <circle cx="702" cy="380" r="3" fill="#803bec" fill-opacity="0.7"/>
+    <circle cx="96" cy="380" r="3" fill="#ffffff" fill-opacity="0.5"/>
+    <circle cx="732" cy="470" r="4" fill="#e5a1f8" fill-opacity="0.5"/>
+
+    <line x1="60" y1="560" x2="760" y2="560" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+
+    <polygon points="170,480 650,480 690,518 130,518" fill="#35353f"/>
+    <polygon points="170,480 650,480 630,502 190,502" fill="#4b4960" fill-opacity="0.5"/>
+    <rect x="330" y="492" width="80" height="14" rx="6" fill="#24232f" fill-opacity="0.6"/>
+    <polygon points="130,518 690,518 672,532 148,532" fill="#15141c"/>
+
+    <rect x="140" y="100" width="540" height="380" rx="28" fill="#24232f" stroke="#803bec" stroke-opacity="0.5" stroke-width="2"/>
+    <circle cx="410" cy="120" r="3" fill="#0a0b10" stroke="#55536b" stroke-width="1"/>
+
+    <rect x="166" y="134" width="488" height="310" rx="12" fill="#ffffff"/>
+    <g clip-path="url(#laptopScreenClip)">
+      <rect x="166" y="134" width="488" height="36" fill="#eef0f3"/>
+      <circle cx="190" cy="152" r="5" fill="#e5a1f8"/>
+      <circle cx="206" cy="152" r="5" fill="#803bec"/>
+      <circle cx="222" cy="152" r="5" fill="#d0d3d8"/>
+      <rect x="260" y="142" width="220" height="20" rx="10" fill="#ffffff" stroke="#dcdfe3" stroke-width="1.5"/>
+      <circle cx="272" cy="152" r="3" fill="#9aa0a8"/>
+
+      <rect x="410" y="170" width="1" height="274" fill="#e5e5e5"/>
+
+      <rect x="166" y="170" width="244" height="274" fill="#24232f"/>
+      <rect x="186" y="196" width="70" height="10" rx="4" fill="#e5a1f8"/>
+      <rect x="186" y="220" width="140" height="10" rx="4" fill="#f1f1f1" fill-opacity="0.85"/>
+      <rect x="206" y="244" width="110" height="10" rx="4" fill="#803bec"/>
+      <rect x="206" y="268" width="150" height="10" rx="4" fill="#f1f1f1" fill-opacity="0.6"/>
+      <rect x="226" y="292" width="90" height="10" rx="4" fill="#e5a1f8" fill-opacity="0.9"/>
+      <rect x="186" y="316" width="60" height="10" rx="4" fill="#803bec"/>
+      <rect x="186" y="340" width="170" height="10" rx="4" fill="#f1f1f1" fill-opacity="0.4"/>
+      <rect x="186" y="364" width="3" height="12" fill="#e5a1f8"/>
+
+      <rect x="430" y="190" width="204" height="14" rx="4" fill="#f1f1f1"/>
+      <circle cx="440" cy="197" r="4" fill="#803bec"/>
+      <rect x="590" y="190" width="44" height="14" rx="7" fill="#803bec"/>
+      <rect x="430" y="224" width="160" height="16" rx="4" fill="#2c2b3a"/>
+      <rect x="430" y="250" width="200" height="8" rx="4" fill="#d0d3d8"/>
+      <rect x="430" y="264" width="170" height="8" rx="4" fill="#d0d3d8"/>
+      <rect x="430" y="284" width="90" height="24" rx="12" fill="#e5a1f8"/>
+      <rect x="430" y="324" width="54" height="54" rx="8" fill="#f1f1f1"/>
+      <circle cx="440" cy="334" r="4" fill="#803bec"/>
+      <rect x="494" y="324" width="54" height="54" rx="8" fill="#f1f1f1"/>
+      <circle cx="504" cy="334" r="4" fill="#e5a1f8"/>
+      <rect x="558" y="324" width="54" height="54" rx="8" fill="#f1f1f1"/>
+      <circle cx="568" cy="334" r="4" fill="#35353f"/>
+    </g>
+
+    <g transform="rotate(-6 706 150)">
+      <rect x="650" y="128" width="112" height="40" rx="14" fill="#803bec"/>
+      <circle cx="672" cy="148" r="5" fill="#ffffff"/>
+      <rect x="686" y="143" width="60" height="9" rx="4.5" fill="#ffffff" fill-opacity="0.85"/>
+    </g>
+
+    <g>
+      <circle cx="118" cy="500" r="34" fill="#e5a1f8"/>
+      <path d="M108,492 L100,500 L108,508" stroke="#35353f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M114,512 L122,488" stroke="#35353f" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M128,492 L136,500 L128,508" stroke="#35353f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
   </g>
-
-  <path d="M45,655 L58,672 L76,625" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M775,655 L762,672 L744,625" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
