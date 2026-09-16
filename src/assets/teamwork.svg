@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="720" viewBox="0 0 820 720" fill="none">
+  <ellipse cx="410" cy="660" rx="320" ry="14" fill="#ffffff" fill-opacity="0.05"/>
+  <line x1="80" y1="660" x2="740" y2="660" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+
+  <path d="M95,330 C300,180 520,180 725,330" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 10" stroke-linecap="round"/>
+  <circle cx="250" cy="200" r="4" fill="#ffffff" fill-opacity="0.8"/>
+  <circle cx="410" cy="178" r="4" fill="#ffffff" fill-opacity="0.8"/>
+  <circle cx="570" cy="200" r="4" fill="#ffffff" fill-opacity="0.8"/>
+
+  <g>
+    <path d="M115,480 C100,510 95,540 98,560" stroke="#f2b28c" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="98" cy="560" r="11" fill="#f2b28c"/>
+    <rect x="126" y="560" width="24" height="90" rx="10" fill="#35353f"/>
+    <rect x="162" y="560" width="24" height="90" rx="10" fill="#35353f"/>
+    <rect x="110" y="460" width="90" height="110" rx="30" fill="#803bec"/>
+    <path d="M195,480 C230,440 245,360 250,305" stroke="#f2b28c" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <circle cx="250" cy="300" r="15" fill="#f2b28c"/>
+    <rect x="145" y="438" width="20" height="30" fill="#f2b28c"/>
+    <ellipse cx="155" cy="402" rx="32" ry="27" fill="#3f3d56"/>
+    <circle cx="155" cy="420" r="30" fill="#f2b28c"/>
+  </g>
+
+  <g>
+    <path d="M65,374 L80,392 L60,396 Z" fill="#803bec"/>
+    <rect x="55" y="322" width="72" height="46" rx="14" fill="#803bec"/>
+    <path d="M74,345 L82,353 L96,337" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <g>
+    <path d="M705,480 C720,510 725,540 722,560" stroke="#c78b6f" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="722" cy="560" r="11" fill="#c78b6f"/>
+    <rect x="634" y="560" width="24" height="90" rx="10" fill="#35353f"/>
+    <rect x="670" y="560" width="24" height="90" rx="10" fill="#35353f"/>
+    <rect x="620" y="460" width="90" height="110" rx="30" fill="#e5a1f8"/>
+    <path d="M625,480 C590,440 575,360 570,305" stroke="#c78b6f" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <circle cx="570" cy="300" r="15" fill="#c78b6f"/>
+    <rect x="655" y="438" width="20" height="30" fill="#c78b6f"/>
+    <ellipse cx="665" cy="402" rx="32" ry="27" fill="#3f3d56"/>
+    <circle cx="665" cy="420" r="30" fill="#c78b6f"/>
+  </g>
+
+  <g>
+    <path d="M755,374 L740,392 L760,396 Z" fill="#e5a1f8"/>
+    <rect x="693" y="322" width="72" height="46" rx="14" fill="#e5a1f8"/>
+    <path d="M708,345 L716,353 L730,337" stroke="#35353f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M719,345 L727,353 L741,337" stroke="#35353f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <defs>
+    <clipPath id="teamworkCardClip">
+      <rect x="250" y="170" width="320" height="300" rx="20"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#teamworkCardClip)">
+    <rect x="250" y="170" width="320" height="300" fill="#ffffff"/>
+    <rect x="250" y="170" width="320" height="46" fill="#3f3d56"/>
+    <circle cx="274" cy="193" r="5" fill="#e5a1f8"/>
+    <circle cx="292" cy="193" r="5" fill="#803bec"/>
+    <circle cx="310" cy="193" r="5" fill="#e5e5e5"/>
+    <path d="M528,184 L518,194 L528,204" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M534,206 L542,182" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M548,184 L558,194 L548,204" stroke="#e5e5e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <rect x="274" y="236" width="160" height="30" rx="15" fill="#e5e5e5"/>
+    <rect x="364" y="280" width="180" height="30" rx="15" fill="#803bec"/>
+    <rect x="274" y="324" width="120" height="30" rx="15" fill="#e5e5e5"/>
+    <rect x="274" y="368" width="64" height="30" rx="15" fill="#e5e5e5"/>
+    <circle cx="292" cy="383" r="4" fill="#803bec"/>
+    <circle cx="306" cy="383" r="4" fill="#e5a1f8"/>
+    <circle cx="320" cy="383" r="4" fill="#0a0b10"/>
+
+    <rect x="274" y="420" width="234" height="34" rx="17" fill="#ffffff" stroke="#e5e5e5" stroke-width="2"/>
+    <circle cx="524" cy="437" r="17" fill="#e5a1f8"/>
+    <path d="M519,437 L529,437 M524,432 L529,437 L524,442" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <path d="M45,655 L58,672 L76,625" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M775,655 L762,672 L744,625" stroke="#ffffff" stroke-opacity="0.5" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
