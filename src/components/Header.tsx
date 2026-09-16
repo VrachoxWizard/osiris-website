@@ -2,7 +2,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
-import logo from "../assets/logo.svg";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -83,7 +82,6 @@ const Header = () => {
         onClick={(e) => scrollUp("home", e)}
         className="flex cursor-pointer items-center"
       >
-        <img src={logo} alt="Osiris" className="mr-3 h-13 w-13" />
         <h3 className="bg-linear-to-r from-pink via-purple to-pink bg-clip-text text-[1.7em] font-display font-bold tracking-[0.12em] text-transparent [text-shadow:0_0_18px_rgba(128,59,236,0.55)]">
           OSIRIS
         </h3>
