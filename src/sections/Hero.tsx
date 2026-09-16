@@ -2,7 +2,7 @@ import pinkBlob from "../assets/blob-pink.png";
 import purpleBlob from "../assets/blob-purple.png";
 import whiteBlob from "../assets/blob-white.png";
 import arrow from "../assets/arrow-right.svg";
-import Mobile from "../assets/mobile.svg";
+import Teamwork from "../assets/teamwork.svg";
 
 const Hero = () => {
   return (
@@ -44,8 +44,8 @@ const Hero = () => {
         </div>
 
         <img
-          src={Mobile}
-          alt="Mobilni prikaz stranice"
+          src={Teamwork}
+          alt="Ilustracija komunikacije i timskog rada u IT-u"
           className="z-7 w-[calc(30%+20vw)] max-w-full animate-[float-y_2.5s_ease_infinite] max-md:absolute max-md:bottom-0 max-md:w-[calc(30%+20vw)] max-md:self-start max-md:opacity-50 max-sm:hidden"
         />
       </div>

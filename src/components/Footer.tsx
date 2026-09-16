@@ -1,33 +1,14 @@
-import Twitter from "../assets/twitter-square-brands.svg";
-import Instagram from "../assets/instagram-square-brands.svg";
-
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="flex items-center justify-between px-[calc(2.5rem+2.5vw)] py-[1.2rem] text-base max-md:flex-col max-md:items-center">
-      <div className="flex items-center">
-        Javite nam se putem 😉
-        <a
-          href="https://twitter.com/code_bucks"
-          className="footer-icon-link"
-        >
-          <img
-            src={Twitter}
-            alt="Twitter"
-            className="ml-4 h-6 w-6 invert transition-all duration-200 ease-in-out"
-          />
-        </a>
-        &nbsp;
-        <a
-          href="https://www.instagram.com/code.bucks/"
-          className="footer-icon-link"
-        >
-          <img
-            src={Instagram}
-            alt="Instagram"
-            className="ml-4 h-6 w-6 invert transition-all duration-200 ease-in-out"
-          />
-        </a>
-      </div>
+    <footer className="flex flex-col items-center gap-2 bg-black px-[calc(2.5rem+2.5vw)] py-8 text-center">
+      <span className="bg-linear-to-r from-pink via-purple to-pink bg-clip-text font-display text-lg font-bold tracking-[0.12em] text-transparent">
+        OSIRIS
+      </span>
+      <p className="text-sm text-white/40">
+        © {year} Osiris. Sva prava pridržana.
+      </p>
     </footer>
   );
 };
