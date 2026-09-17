@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative flex w-screen flex-col items-center justify-center bg-black pt-80"
+      className="relative flex w-screen flex-col items-center justify-center bg-black pt-80 pb-20"
     >
       <h2 className="title relative mt-4 inline-block text-[2rem] text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-1/2 before:-translate-x-1/2 before:translate-y-2 before:border-b-2 before:border-pink before:content-['']">
         Što radimo
@@ -41,7 +41,7 @@ const Services = () => {
             </p>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
+        <div className="absolute right-[10%] top-[80%] flex w-[20vw] max-w-72 items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Tube} alt="Objekt u obliku cijevi" />
         </div>
         <SvgBlock src={designIcon} alt="Dizajn" />
@@ -62,7 +62,7 @@ const Services = () => {
             </p>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
+        <div className="absolute right-[10%] top-[80%] flex w-[20vw] max-w-72 items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Cone} alt="Objekt u obliku stošca" />
         </div>
         <SvgBlock src={developIcon} alt="Razvoj" />
@@ -84,7 +84,7 @@ const Services = () => {
             </p>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
+        <div className="absolute right-[10%] top-[80%] flex w-[20vw] max-w-72 items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Capsule} alt="Objekt u obliku kapsule" />
         </div>
         <SvgBlock src={supportIcon} alt="Podrška" />

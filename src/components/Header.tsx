@@ -5,10 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 import purpleBlob from "../assets/blob-purple.png";
 import pinkBlob from "../assets/blob-pink.png";
-import Facebook from "../assets/facebook-square-brands.svg";
-import LinkedId from "../assets/linkedin-brands.svg";
-import Twitter from "../assets/twitter-square-brands.svg";
-import Instagram from "../assets/instagram-square-brands.svg";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -200,7 +196,7 @@ const Header = () => {
               onClick={(e) => handleClick(link.id, e)}
               className="group flex items-center gap-3 py-3 text-[calc(1.6rem+2vw)] font-medium text-white"
             >
-              <span className="text-[0.9rem] font-normal text-pink/50">
+              <span className="inline-block w-6 text-right text-[0.9rem] font-normal text-pink/50">
                 0{index + 1}
               </span>
               <span className="relative">
@@ -221,33 +217,6 @@ const Header = () => {
             Kontakt
           </button>
         </a>
-
-        <div data-menu-item className="mt-12 flex items-center gap-6">
-          <a
-            href="https://www.facebook.com/"
-            className="opacity-60 transition-opacity hover:opacity-100"
-          >
-            <img src={Facebook} alt="Facebook" className="h-6 w-6" />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            className="opacity-60 transition-opacity hover:opacity-100"
-          >
-            <img src={LinkedId} alt="LinkedIn" className="h-6 w-6" />
-          </a>
-          <a
-            href="https://twitter.com/"
-            className="opacity-60 transition-opacity hover:opacity-100"
-          >
-            <img src={Twitter} alt="Twitter" className="h-6 w-6" />
-          </a>
-          <a
-            href="https://www.instagram.com/"
-            className="opacity-60 transition-opacity hover:opacity-100"
-          >
-            <img src={Instagram} alt="Instagram" className="h-6 w-6" />
-          </a>
-        </div>
       </div>
     </>
   );
