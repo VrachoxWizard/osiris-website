@@ -14,9 +14,9 @@ const Services = () => {
       id="services"
       className="relative flex w-screen flex-col items-center justify-center bg-black pt-80"
     >
-      <h1 className="title relative mt-4 inline-block text-[2rem] text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-1/2 before:-translate-x-1/2 before:translate-y-2 before:border-b-2 before:border-pink before:content-['']">
+      <h2 className="title relative mt-4 inline-block text-[2rem] text-white before:absolute before:bottom-0 before:left-1/2 before:h-px before:w-1/2 before:-translate-x-1/2 before:translate-y-2 before:border-b-2 before:border-pink before:content-['']">
         Što radimo
-      </h1>
+      </h2>
       <span
         id="line"
         className="mt-8 h-60 rounded-t-[20px] border-l-4 border-l-background"
@@ -30,15 +30,15 @@ const Services = () => {
         <TextBlock
           topic="Dizajn"
           title={
-            <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
+            <h3 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
               Izrađujemo nagrađivane dizajne
-            </h1>
+            </h3>
           }
           subText={
-            <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
+            <p className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
               Pomažemo klijentima kreirati odličan dizajn koji privlači više
               kupaca
-            </h5>
+            </p>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
@@ -51,15 +51,15 @@ const Services = () => {
         <TextBlock
           topic="Razvoj"
           title={
-            <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
+            <h3 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
               Razvijamo kvalitetne web stranice i aplikacije
-            </h1>
+            </h3>
           }
           subText={
-            <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
+            <p className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
               Gradimo prikladna rješenja za razvoj vaše web stranice i
               aplikacije najboljim dostupnim alatima
-            </h5>
+            </p>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
@@ -72,16 +72,16 @@ const Services = () => {
         <TextBlock
           topic="Podrška"
           title={
-            <h1 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
+            <h3 className="text-[calc(2rem+2vw)] leading-[1.2] max-md:text-[calc(2rem+3vw)]">
               Pružamo podršku za vašu digitalnu prisutnost
-            </h1>
+            </h3>
           }
           subText={
-            <h5 className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
+            <p className="text-[calc(0.417rem+0.417vw)] max-md:text-[calc(0.417rem+0.833vw)]">
               Kada vaš sustav postane dostupan online, ostajemo na
               raspolaganju kako bismo vam pomogli koristiti ga te pružili
               tehničku podršku i održavanje za vaše poslovanje
-            </h5>
+            </p>
           }
         />
         <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">

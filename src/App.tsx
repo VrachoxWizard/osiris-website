@@ -7,7 +7,7 @@ const ScrollToTop = lazy(() => import("./components/ScrollToTop"));
 
 function App() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<div className="h-screen w-screen bg-black" />}>
       <ScrollToTop />
       <Header />
       <Home />

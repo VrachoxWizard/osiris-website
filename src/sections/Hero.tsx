@@ -34,9 +34,9 @@ const Hero = () => {
           <h1 className="py-2 text-[calc(2rem+1vw)] leading-[1.2]">
             Transformiramo vašu digitalnu prisutnost
           </h1>
-          <h5 className="text-[calc(0.5rem+0.5vw)] text-white/75">
+          <p className="text-[calc(0.5rem+0.5vw)] text-white/75">
             pomažemo tvrtkama u brzom rastu izraditi nagrađivane web stranice
-          </h5>
+          </p>
           <button className="mt-4 flex items-center rounded-full bg-white px-4 py-2 text-[calc(0.5rem+0.5vw)] font-bold text-black transition-transform duration-200 hover:scale-110 active:scale-90 max-md:py-[0.2rem]">
             Javite nam se &nbsp;
             <img src={arrow} alt="poziv na akciju" className="w-6" />

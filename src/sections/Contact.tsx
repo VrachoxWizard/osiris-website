@@ -10,9 +10,17 @@ interface FieldProps {
   type?: string;
   placeholder: string;
   textarea?: boolean;
+  required?: boolean;
 }
 
-const Field = ({ label, name, type = "text", placeholder, textarea }: FieldProps) => {
+const Field = ({
+  label,
+  name,
+  type = "text",
+  placeholder,
+  textarea,
+  required,
+}: FieldProps) => {
   const fieldClasses =
     "peer w-full border-0 border-b border-white/15 bg-transparent px-0 py-3 text-white placeholder-white/25 transition-colors duration-300 focus:border-pink/70 focus:outline-none";
 
@@ -26,6 +34,7 @@ const Field = ({ label, name, type = "text", placeholder, textarea }: FieldProps
           name={name}
           rows={3}
           placeholder={placeholder}
+          required={required}
           className={`${fieldClasses} mt-2 resize-none`}
         />
       ) : (
@@ -33,6 +42,7 @@ const Field = ({ label, name, type = "text", placeholder, textarea }: FieldProps
           name={name}
           type={type}
           placeholder={placeholder}
+          required={required}
           className={`${fieldClasses} mt-2`}
         />
       )}
@@ -54,9 +64,9 @@ const Contact = () => {
 
       <div className="grid w-full max-w-5xl gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          <h1 className="text-[calc(1.7rem+1.3vw)] font-medium leading-tight text-white">
+          <h2 className="text-[calc(1.7rem+1.3vw)] font-medium leading-tight text-white">
             Kontaktirajte nas
-          </h1>
+          </h2>
           <span className="mt-4 h-[3px] w-14 rounded-full bg-linear-to-r from-pink via-purple to-pink" />
           <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-white/50">
             Imate ideju ili pitanje? Javite nam se — rado ćemo popričati o
@@ -71,7 +81,7 @@ const Contact = () => {
               <img src={Facebook} alt="Facebook" className="h-8 w-8" />
             </a>
             <a
-              href="https://www.linkedin.com//"
+              href="https://www.linkedin.com/"
               className="contact-icon-link opacity-60 transition-all duration-300 hover:-translate-y-0.5 hover:opacity-100"
             >
               <img src={LinkedId} alt="LinkedId" className="h-8 w-8" />
@@ -91,23 +101,35 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="flex flex-col gap-8">
+        {/*
+          TODO: sign up at https://formspree.io (free) with mvukusic67@gmail.com,
+          create a form, then replace YOUR_FORM_ID below with the real form ID.
+        */}
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          className="flex flex-col gap-8"
+        >
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <Field label="Ime" name="name" placeholder="vaše ime" />
+            <Field label="Ime" name="name" placeholder="vaše ime" required />
             <Field
               label="Email"
               name="email"
               type="email"
               placeholder="unesite email adresu"
+              required
             />
           </div>
-          <Field label="Poruka" name="message" placeholder="vaša poruka" textarea />
+          <Field
+            label="Poruka"
+            name="message"
+            placeholder="vaša poruka"
+            textarea
+            required
+          />
 
           <button
             type="submit"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
             className="group mt-2 flex w-fit cursor-pointer items-center gap-3 self-center rounded-full bg-white px-7 py-3 text-[0.95rem] font-semibold text-black transition-all duration-300 hover:shadow-[0_0_35px_rgba(229,161,248,0.35)] active:scale-95 lg:self-start"
           >
             Pošalji
