@@ -41,7 +41,7 @@ const Services = () => {
             </h5>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
+        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Tube} alt="Objekt u obliku cijevi" />
         </div>
         <SvgBlock src={designIcon} alt="Dizajn" />
@@ -62,7 +62,7 @@ const Services = () => {
             </h5>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
+        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Cone} alt="Objekt u obliku stošca" />
         </div>
         <SvgBlock src={developIcon} alt="Razvoj" />
@@ -84,7 +84,7 @@ const Services = () => {
             </h5>
           }
         />
-        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:opacity-50">
+        <div className="absolute right-[35%] top-[80%] flex w-[20vw] items-center justify-center max-md:static max-md:right-auto max-md:top-auto max-md:mt-6 max-md:w-24 max-md:opacity-50">
           <img src={Capsule} alt="Objekt u obliku kapsule" />
         </div>
         <SvgBlock src={supportIcon} alt="Podrška" />
